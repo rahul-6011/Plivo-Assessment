@@ -50,7 +50,7 @@ const PublicStatusPage = () => {
 
   const loadData = async () => {
     try {
-      const orgSlug = 'acme';
+      const orgSlug = org;
       console.log('Loading data for org:', orgSlug);
       
       const servicesRes = await serviceAPI.getPublicServices(orgSlug);

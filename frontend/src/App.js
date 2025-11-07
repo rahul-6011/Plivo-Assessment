@@ -29,7 +29,7 @@ const App = () => {
       <Router>
         <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
           <Routes>
-            <Route path="/" element={<Navigate to="/status/acme" replace />} />
+            <Route path="/" element={<OrganizationSelector />} />
             <Route path="/status/:org" element={<PublicStatusPage />} />
             <Route path="/organizations" element={<OrganizationSelector />} />
             <Route path="/login" element={<LoginPage />} />
